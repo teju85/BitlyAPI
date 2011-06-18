@@ -1,0 +1,61 @@
+
+        *** Java API for Bitly REST API ***
+
+
+0. INTRODUCTION:
+    This is a java wrapper over the bitly REST API which is described rather
+very nicely at: http://code.google.com/p/bitly-api/wiki/ApiDocumentation.
+The main class of interest is 'Bitly'. This provides function calls to all of
+the REST-API calls mentioned in the above link. Each such call returns a
+'BitlyResponse' object which contains all the relevant fields (as mentioned
+for that corresponding call in the REST-API). However, in order to make this
+work you need a login and api-key, which can be obtained from bit.ly at:
+http://bit.ly/a/sign_up. Please go through the individual BitlyResponse child
+classes documentation to know more about its members and their meanings. You
+can get the class documentation from inside the folder 'doc'. The starting
+point would be 'doc/index.html'.
+
+
+1. EXAMPLES:
+    An example usage of all the API calls has been added inside the file
+BitlyTest.java. Go through this file in order to get a hands-on the interface
+provided by this API. Make sure that you have your jdk bin in the PATH, as well
+as the JAVA_HOME environment variables set. Then launch the script 'test.sh'.
+This will prompt you to enter the bitly login and the api-key to be used with
+all the REST API calls. For this work, you need an account with the bit.ly.
+Without a valid login and api-key, all calls to bit.ly api are bound fail!
+
+
+2. Building the API (eclipse):
+    Just make sure that you have added all the jar files inside the 'lib'
+folder in the build-path. Then, export the library as a jar file.
+
+
+3. Building from the commandline:
+    Currently this is not supported. But, this feature will be added soon.
+
+
+4. Documentation:
+    All doxygen documentation can be found inside the folder 'doc'. To start,
+you can open the 'index.html' and then follow the links of your interest.
+
+
+5. JAR FILES:
+ . Bitly-1.0.1.jar
+
+
+6. JAR FILE VERSION HISTORY:
+ . v1.0.1:   Jun,13,2011: First release for the v3 bitly-API.
+
+
+7. DEPENDENCIES:
+ . org.apache.http.*
+ . org.json.*
+ . JDK (1.6.0_25)
+ . Eclipse IDE (preferred, no strict dependency on version)
+ . bash (v4.1.5)
+
+
+8. CONTACT:
+    For any issues/suggestions/comments feel free to contact me at:
+rao.thejaswi@gmail.com.
